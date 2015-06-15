@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CYSubView">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="account_candou.png" translatesAutoresizingMaskIntoConstraints="NO" id="tJu-t5-WGV">
+                    <rect key="frame" x="0.0" y="0.0" width="48" height="47"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU2-OM-qdk">
+                    <rect key="frame" x="54" y="0.0" width="120" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topic_Comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qse-Oq-2ut">
+                    <rect key="frame" x="54" y="25" width="13" height="8"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRc-c2-v8z">
+                    <rect key="frame" x="72" y="17" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3I-QP-pvy">
+                    <rect key="frame" x="144" y="17" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72n-FL-I8U" customClass="CYStarView">
+                    <rect key="frame" x="56" y="36" width="65" height="23"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topic_Download.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fo5-q1-Gwd">
+                    <rect key="frame" x="123" y="24" width="14" height="8"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="comment" destination="wRc-c2-v8z" id="ZPh-3P-kya"/>
+                <outlet property="downLoadLabel" destination="z3I-QP-pvy" id="J81-CD-5SK"/>
+                <outlet property="headImage" destination="tJu-t5-WGV" id="BTl-Gz-q4I"/>
+                <outlet property="nameLabel" destination="dU2-OM-qdk" id="ZLp-9r-YsT"/>
+                <outlet property="starView" destination="72n-FL-I8U" id="yfL-zW-JAj"/>
+            </connections>
+            <point key="canvasLocation" x="273" y="161.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="account_candou.png" width="57" height="57"/>
+        <image name="topic_Comment.png" width="13" height="9"/>
+        <image name="topic_Download.png" width="10" height="11"/>
+    </resources>
+</document>
