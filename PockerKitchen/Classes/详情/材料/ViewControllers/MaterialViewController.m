@@ -48,6 +48,7 @@
 {
     return 10;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MaterialCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MaterialCell"];
@@ -67,4 +68,5 @@
 {
     return 0.0001;
 }
+
 @end
